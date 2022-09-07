@@ -1,0 +1,10 @@
+<!-- Placing result as a list in the block content. -->
+{% extends 'base.html' %}
+{% block content %}
+<h3>Exchange Rates Info of {{data[1]}}</h3>
+<ul>
+    {% for currency in data[0] %}
+        <li><b>{{currency[0]}}/TRY:</b>{{currency[1]}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

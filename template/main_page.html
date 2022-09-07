@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+<!-- Placing buttons and the calender inside the block content. Calender dates are limited from 2005-01-01 as beginning date and default date which is today. With these way,
+picking an invalid date tried to be avoided. -->
+    {% block content %}
+        <h3>Pick one of the options to get Exchange Rate Info</h3>
+        <form method="post" action="/">
+            <p>{{ form.date.label }} {{form.date(class='PickDate', min='2005-01-01', max=form.date.default) }} {{form.hidden_tag()}}</p>
+            <input type="submit" value="Get Latest Currencies" name="getLatest"/>
+            <input type="submit" value="Get Currencies with Date" name="getWithDate" />
+        </form>
+    {% endblock %}
+
+

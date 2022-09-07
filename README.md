@@ -1,1 +1,1 @@
-# f85ca8a1d60f39991e0596655fe3fc6d
+# This project is implemented with Python and Flask Framework to create simple Exchange Rate Web Service. Currently, it gets data from Tcmb and Xrates APIs for USD/TRY and EUR/TRY exchange rates and deliver it to client side. 
